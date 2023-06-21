@@ -12,3 +12,16 @@ const out_rvsd = document.getElementById("rvsd");
 out_rvsd.innerHTML = ' Here the reversed array: ' +
 reversedArr; //display reversed array
 //Task #2
+let Arr = [-1, 2,-5,6,-9];
+const out_array = document.getElementById("for");
+out_array.innerHTML = "Here the original array" +
+Arr;
+
+
+function sortArray(arr) {
+  return arr.sort(((a, b) => a - b));
+}
+const sortedArr = sortArray(Arr);
+const out_sorted =document.getElementById("sorted");
+out_sorted.innerHTML = "Here the sorted array" + 
+sortedArr;
